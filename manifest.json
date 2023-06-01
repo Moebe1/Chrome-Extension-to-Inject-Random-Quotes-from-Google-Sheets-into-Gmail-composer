@@ -31,7 +31,7 @@
       }
     ],
     "oauth2": {
-      "client_id": "51718967871-218k0vrh4h3rfci12is1mvv0i2env7ov.apps.googleusercontent.com",
+      "client_id": "<YOUR_CLIENT_ID>,
       "scopes": ["https://www.googleapis.com/auth/spreadsheets.readonly"]
     }
   }
