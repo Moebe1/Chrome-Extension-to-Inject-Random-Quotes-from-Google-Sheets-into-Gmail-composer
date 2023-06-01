@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 80%;
+        margin: auto;
+        font-family: Arial, sans-serif;
+        background-color: #333;
+        color: #fff;
+      }
+      a {
+        color: #4CAF50;
+      }
+      a:hover {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quote Injector Help</h1>
+
+    <h2>How to Setup Google Sheets OAuth2 client</h2>
+    <ol>
+      <li>Go to the <a href="https://console.developers.google.com/" target="_blank">Google Cloud Console</a>.</li>
+      <li>Click on "Select a project" and then on "New Project".</li>
+      <li>Name your project, then click on "Create".</li>
+      <li>On the project dashboard, click on "Enable APIs and Services".</li>
+      <li>Search for "Google Sheets API" and enable it.</li>
+      <li>Go back to the dashboard, click on "Credentials", then "Create Credentials" and choose "OAuth client ID".</li>
+      <li>Configure the consent screen as required, then choose "Web application" for the Application Type. Enter your extension's ID in the "Authorized JavaScript origins" field and save.</li>
+      <li>Copy the generated client ID for use in the extension.</li>
+    </ol>
+
+    <h2>How to Find Google Sheets ID and Define Range</h2>
+    <p>Your Google Sheets ID is part of the URL when you're viewing your spreadsheet. For example, if your Google Sheets URL is "https://docs.google.com/spreadsheets/d/1a2b3c4d5e6f7g8/edit", then your Google Sheets ID is "1a2b3c4d5e6f7g8".</p>
+    <p>If you have populated Column A of your Google Sheet with the quotes or text you want to be pasted, then you would enter the range as "A:A". Here are some examples of other ranges:</p>
+    <ul>
+      <li>"A1:A100" if your quotes are in cells A1 to A100.</li>
+      <li>"A1:B100" if your quotes are in cells from A1 to B100.</li>
+      <li>"Sheet2!A:A" if your quotes are in Column A of Sheet2.</li>
+    </ul>
+
+    <h2>Entering OAuth2 client details in the extension</h2>
+    <ol>
+      <li>Click on the Quote Injector Extension icon in your browser.</li>
+      <li>Click on the link to the extension options page.</li>
+      <li>Enter the client ID you just generated into the Client ID field.</li>
+      <li>Enter your Google Sheets ID and the range of cells where your quotes are located into the corresponding fields, then click save.</li>
+    </ol>
+
+    <h2>Using the Extension</h2>
+    <ol>
+      <li>When composing a new email in Gmail, a random quote from your Google Sheets document will be inserted at the bottom of the email composer.</li>
+      <li>If you want to refresh the pool of quotes, click on the extension icon and press the "Refresh Quotes" button in the popup.</li>
+      <li>If you need to change your settings, go to the extension options page by following the link in the popup.</li>
+    </ol>
+  </body>
+</html>

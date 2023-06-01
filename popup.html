@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        height: 200px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+      }
+      .settings, .button-container {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      button, .help-btn {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+      .help-btn {
+        text-decoration: none;
+        display: inline-block;
+      }
+      a {
+        color: #4CAF50;
+      }
+      a:hover {
+        color: #fff;
+      }
+      .author {
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="settings">
+      <h2>Quote Injector Extension</h2>
+      <p>For setting up your Sheet ID, Range, and Client ID, go to the <a id="optionsLink" href="#" target="_blank">extension options page</a>.</p>
+    </div>
+    <div class="button-container">
+      <button id="refresh">Refresh Quotes</button>
+      <a class="help-btn" href="help.html" target="_blank">Help</a>
+    </div>
+    <p class="author">Created by: <a href="https://twitter.com/Mob3One" target="_blank">@Mob3One</a></p>
+    <script src="popup.js"></script>
+    <script src="popupLink.js"></script>
+  </body>
+</html>

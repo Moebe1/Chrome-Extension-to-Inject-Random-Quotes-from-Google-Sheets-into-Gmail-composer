@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        background-color: #333;
+        color: #fff;
+      }
+      label, input {
+        display: block;
+        margin-bottom: 10px;
+      }
+      a {
+        color: #4CAF50;
+      }
+      a:hover {
+        color: #fff;
+      }
+      #extensionId {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <label for="sheetId">Google Sheets ID</label>
+    <input type="text" id="sheetId">
+
+    <label for="sheetRange">Google Sheets Range</label>
+    <input type="text" id="sheetRange">
+
+    <label for="clientId">OAuth Client ID</label>
+    <input type="text" id="clientId">
+
+    <button id="save">Save</button>
+    
+    <p id="status"></p>
+    <div id="extensionId"></div>
+    
+    <a href="help.html" target="_blank">Help Page</a>
+    <script src="options.js"></script>
+  </body>
+</html>
