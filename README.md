@@ -1,4 +1,4 @@
-# Gmail Quote Injector from Google Sheets
+# Gmail Quote Injector from Google Sheets Chrome Extension
 Unpacked Chrome Extension that injects a random quote from a user specified Google Sheet into a Gmail Composer.
 
 ## Change Log
