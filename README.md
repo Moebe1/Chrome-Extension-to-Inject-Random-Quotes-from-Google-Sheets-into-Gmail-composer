@@ -3,10 +3,10 @@ Unpacked Chrome Extension that injects a random quote from a user specified Goog
 
 ## Change Log
 Date: 2/06/2023
-a. Updated to V3 Chrome Manifest
-b. Added a Text settings page with font selection, font size and font color
-c. Changes once saved are applied immediately
-d. Left Aligned elements on the Text Settings Page
+1. Updated to V3 Chrome Manifest
+2. Added a Text settings page with font selection, font size and font color
+3. Changes once saved are applied immediately
+4. Left Aligned elements on the Text Settings Page
 
 ## Google API Console & Initial Setup
 1. Download the repository to a suitable location on your computer
